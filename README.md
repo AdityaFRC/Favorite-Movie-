@@ -5,8 +5,11 @@ In this project has the capability to collect the information you entered about 
 Variables:
 
 Movie = Movie Title
+
 Yor = Year of Release
+
 Dir = Director
+
 URL = Url for movie poster
 
 Run This File :
