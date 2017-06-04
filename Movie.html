@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Favorite Movie !</title>
+</head>
+<h1>Favorite Movie !</h1>
+<img src = "https://www.iconfinder.com/data/icons/fillies-large/64/film-camera-512.png" height ="250" width = "250">
+    <script>function save() {
+
+    	//THIS PART IS IMPORTANT
+
+//This puts an ID's value in an variable then it stringify's the variable and stores it in localStorage
+        var MOVIE = document.getElementById("Movie").value;
+        localStorage.setItem("Movie", JSON.stringify(MOVIE));
+        
+        var YOR = document.getElementById("Yor").value;
+        localStorage.setItem("Yor", JSON.stringify(YOR));
+        
+        var DIR = document.getElementById("Director").value;
+        localStorage.setItem("Director" , JSON.stringify(DIR));
+ 
+        var URL = document.getElementById("Url").value;
+        localStorage.setItem("URL" , JSON.stringify(URL));
+   
+//To test whether saved it says saved
+	alert("SAVED");
+
+	document.write("Your Entered Movie:");
+	document.write("<br/>Movie: " + MOVIE);
+    document.write("<br/>Director of Movie: " + DIR);
+    document.write("<br/>Year Movie was Released: " + YOR);
+    document.write("<br/>URL for Movie: " + URL);
+}</script>  
+
+
+<body>
+
+
+
+ 
+          <fieldset>
+            <label for="movie">Enter Movie Title:</label>
+            <input type="text" id="Movie" name="movie" placeholder="Eg.James Bond" />
+            <br />
+            
+            <label for="yor">Enter the Year of Release:</label>
+            <input type="text" id="Yor" name="yor" placeholder="Eg.1993" />
+            <br />
+            
+            <label for="director">Enter the Movie Director:</label>
+            <input type="text" id="Director" name="director" placeholder="Eg.James Camaroon" />
+            <br />
+            
+            <label for="url">Enter the Poster URL:</label>
+            <input type="text" id="Url" name="url" placeholder="Eg. https://i.ytimg.com/vi/nFpadSRkOLc/maxresdefault.jpg" />
+            <br />
+     
+            <button  onclick= "save()" >Submit</button> 
+       
+         </fieldset>
+       
+
+</body>
+</html>
