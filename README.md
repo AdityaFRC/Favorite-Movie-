@@ -8,7 +8,7 @@ Movie = Movie Title
 
 Yor = Year of Release
 
-Dir = Director
+Dir = Director of Movie
 
 URL = Url for movie poster
 
